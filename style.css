@@ -275,6 +275,31 @@ body {
     box-shadow: 0 0 20px rgba(255, 0, 51, 0.6);
 }
 
+
+.popup-body {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.trailer-container {
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 500px) {
+  .popup-body iframe {
+    height: 200px;
+  }
+}
+
 .popup-overlay {
     display: none;
     position: fixed;
@@ -318,6 +343,67 @@ body {
     line-height: 1.6;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.music-popup-content {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.music-popup-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.music-popup-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.popup-title {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.popup-artist {
+    font-size: 20px;
+    color: #ffaaaa;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
+    margin: 5px 0;
+}
+
+.music-popup-player {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 0;
+}
+
+.now-playing {
+    color: #ffaaaa;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.music-popup-player audio {
+    border-radius: 10px;
 }
 
 .close-btn {
@@ -492,4 +578,26 @@ body {
     .section h2 { font-size: 1.8em; }
     .grid { grid-template-columns: 1fr; }
     .intro-buttons { flex-direction: column; }
+
+      .popup-body {
+    padding: 15px;
+  }
+
+  .popup-body iframe {
+    height: 250px; /* smaller video on mobile */
+  }
+
+  .popup-body h3 {
+    font-size: 1.4em;
+  }
+
+  .popup-body p {
+    font-size: 0.95em;
+  }
+
+  .popup-body .btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
 }
+

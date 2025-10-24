@@ -50,32 +50,44 @@ function showCoderPopup() {
     document.getElementById('popupOverlay').style.display = 'flex';
 }
 
-// Movie Popup
-function showMoviePopup(title, description, year, rating) {
-    const stars = '⭐'.repeat(rating);
-    const popupBody = document.getElementById('popupBody');
-    popupBody.innerHTML = `
-        <h3>🎬 ${title}</h3>
-        <p><strong>Year:</strong> ${year}</p>
-        <p class="stars">${stars}</p>
-        <p style="margin-top: 20px; line-height: 1.8;">${description}</p>
-        <p style="color: #ff6666; margin-top: 20px; font-style: italic;">"A must-watch masterpiece!"</p>
-    `;
-    document.getElementById('popupOverlay').style.display = 'flex';
+function showMoviePopup(title, description, year, rating, trailerUrl) {
+  const stars = '⭐'.repeat(rating);
+  const popupBody = document.getElementById('popupBody');
+
+  popupBody.innerHTML = `
+    <h3>🎬 ${title}</h3>
+    <p><strong>Year:</strong> ${year}</p>
+    <p class="stars">${stars}</p>
+    <p style="margin-top: 15px; line-height: 1.8;">${description}</p>
+    <div class="trailer-container">
+      <iframe width="100%" height="230" src="${trailerUrl}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  `;
+
+  document.getElementById('popupOverlay').style.display = 'flex';
 }
 
+
 // Music Popup with Audio Player
-function showMusicPopup(title, artist, audioSrc) {
+function showMusicPopup(title, artist, audioSrc, imageSrc) {
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-        <h3>🎧 ${title}</h3>
-        <p><strong>Artist:</strong> ${artist}</p>
-        <p style="margin-top: 20px; color: #ffaaaa;">Now Playing...</p>
-        <audio controls autoplay style="width: 100%; margin-top: 20px;">
-            <source src="${audioSrc}" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <p style="margin-top: 20px; color: #ff6666;">"This song keeps me going through late-night coding sessions!"</p>
+        <div class="music-popup-content" style="background-image: url('${imageSrc}');">
+            <div class="music-popup-overlay">
+                <div class="music-popup-header">
+                    <h3 class="popup-title">${title}</h3>
+                    <p class="popup-artist">${artist}</p>
+                </div>
+                
+                <div class="music-popup-player">
+                    <p class="now-playing">🎧 Now Playing...</p>
+                    <audio controls autoplay style="width: 100%;">
+                        <source src="${audioSrc}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
     `;
     document.getElementById('popupOverlay').style.display = 'flex';
 }
@@ -121,6 +133,7 @@ function closePopup() {
         audio.currentTime = 0;
     });
     popup.style.display = 'none';
+    document.getElementById('popupBody').innerHTML = '';
 }
 
 // Close popup when clicking outside
