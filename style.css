@@ -482,6 +482,10 @@ body {
     .header-content p { font-size: 1em;
             text-align: center;
     }   
+    .social-icon {
+    width: 50px;
+    height: 40px;
+    }
     .profile-photo img { width: 180px; height: 180px; }
     .section h2 { font-size: 1.8em; }
     .grid { grid-template-columns: 1fr; }
