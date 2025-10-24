@@ -88,16 +88,22 @@ function showContactPopup() {
         <p style="margin-bottom: 30px;">Find me on these platforms:</p>
         <div class="social-links">
             <a href="https://www.facebook.com/keirzhr?mibextid=ZbWKwL" target="_blank" class="social-icon" title="Facebook">
-                <img src="images/fb.png" alt="Facebook Logo" style="width:80px; height:80px;">
+                <img src="images/fb.png" alt="Facebook Logo">
             </a>
             <a href="https://github.com/keirzhr" target="_blank" class="social-icon" title="GitHub">
-                <img src="images/github.png" alt="GitHub Logo" style="width:80px; height:80px;">
+                <img src="images/github.png" alt="GitHub Logo">
             </a>
             <a href="https://www.instagram.com/keirzhr/" target="_blank" class="social-icon" title="Instagram">
-                <img src="images/instagram.png" alt="Instagram Logo" style="width:80px; height:80px;">
+                <img src="images/instagram.png" alt="Instagram Logo">
             </a>
             <a href="mailto:keilrizherv@gmail.com" target="_blank" class="social-icon" title="Gmail">
-                <img src="images/gmail.png" alt="Gmail Logo" style="width:80px; height:80px;">
+                <img src="images/gmail.png" alt="Gmail Logo">
+            </a>
+            <a href="https://www.tiktok.com/@krzher?_t=ZS-90oV8t9KsFB&_r=1" target="_blank" class="social-icon" title="Tiktok">
+                <img src="images/tiktok.png" alt="Tiktok Logo">
+            </a>
+            <a href="https://discord.com/users/1160141003429265409" target="_blank" class="social-icon" title="Discord">
+                <img src="images/discord.png" alt="Discord Logo">
             </a>
         </div>
         <p style="margin-top: 30px; color: #ffaaaa; font-size: 0.95em;">Click on any icon to visit my profile!</p>
