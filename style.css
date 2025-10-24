@@ -465,6 +465,80 @@ audio {
     box-shadow: 0 0 50px rgba(255, 0, 51, 1);
 }
 
+/* Spotify section container */
+.spotify-caption {
+    display: flex; /* horizontal layout */
+    align-items: center; /* vertically center logo & text */
+    gap: 15px; /* space between logo and text */
+    margin-top: 20px;
+}
+
+/* Spotify link/logo */
+.spotify-caption .spotify-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgb(30, 215, 96); /* Spotify green glow */
+    text-decoration: none;
+}
+
+.spotify-caption .spotify-icon img {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.spotify-caption .spotify-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 50px rgba(30, 215, 96, 1);
+}
+
+/* Spotify text */
+.spotify-caption p {
+    margin: 0;
+    display: inline-block; /* keep text on same line as logo */
+}
+
+.letterboxd-caption {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* space between logo and text */
+    margin-top: 20px;
+}
+
+.letterboxd-caption .social-icon.letterboxd-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px #00b0ff; /* Letterboxd brand color effect */
+    text-decoration: none;
+}
+
+.letterboxd-caption .social-icon.letterboxd-icon img {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.letterboxd-caption .social-icon.letterboxd-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 50px rgba(0, 176, 255, 1);
+}
+
+.letterboxd-caption p {
+    margin: 0;
+}
+
 
 .popup audio {
     width: 100%;
@@ -608,5 +682,6 @@ audio {
   audio {
         height: 60px; /* bigger on phones */
     }
+    
 }
 
