@@ -488,7 +488,7 @@ body {
     .header-content p { font-size: 1em;
             text-align: center;
     }   
-    .profile-photo img { width: 180px; height: 180px; }
+    .profile-photo img { width: 190px; height: 260px; }
     .section h2 { font-size: 1.8em; }
     .grid { grid-template-columns: 1fr; }
     .intro-buttons { flex-direction: column; }
