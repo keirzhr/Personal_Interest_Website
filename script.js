@@ -81,7 +81,7 @@ function showMusicPopup(title, artist, audioSrc, imageSrc) {
                 
                 <div class="music-popup-player">
                     <p class="now-playing">🎧 Now Playing...</p>
-                    <audio controls autoplay style="width: 100%;">
+                    <audio controls autoplay">
                         <source src="${audioSrc}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
