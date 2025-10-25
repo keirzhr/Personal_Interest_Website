@@ -183,11 +183,6 @@ body {
     margin: 0;
 }
 
-.coffee-icon {
-    font-size: 3em;
-    animation: float 2s ease-in-out infinite;
-}
-
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -504,6 +499,7 @@ audio {
     display: inline-block; /* keep text on same line as logo */
 }
 
+
 .letterboxd-caption {
     display: flex;
     align-items: center;
@@ -534,11 +530,44 @@ audio {
     transform: translateY(-5px);
     box-shadow: 0 0 50px rgba(0, 176, 255, 1);
 }
-
-.letterboxd-caption p {
+.letterboxd-caption p { 
     margin: 0;
 }
 
+.steam-caption {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* space between logo and text */
+    margin-top: 20px;
+}
+
+.steam-caption .social-icon.steam-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px #4699ff; /* Steam dark-blue glow */
+    text-decoration: none;
+}
+
+.steam-caption .social-icon.steam-icon img {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.steam-caption .social-icon.steam-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 50px rgb(31, 132, 255); /* stronger Steam glow on hover */
+}
+
+.steam-caption p {
+    margin: 0;
+}
 
 .popup audio {
     width: 100%;

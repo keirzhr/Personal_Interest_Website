@@ -39,7 +39,7 @@ function showGamePopup(title, description) {
 function showCoderPopup() {
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-        <h3>☕💻 Debug Mode Activated</h3>
+        <h3>💻 Debug Mode Activated</h3>
         <p style="font-size: 1.2em;">Debugging with coffee...</p>
         <div class="progress-bar">
             <div class="progress-fill"></div>
