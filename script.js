@@ -1,26 +1,18 @@
 const codeSnippets = {
-    python: `print("Hello, World! ☕")
-for i in range(3):
-print("Coding with passion!")`,
-    cpp: `#include <iostream>
-using namespace std;
-int main() {
-cout << "Hello, World! ☕" << endl;
-return 0;
-}`,
-    javascript: `console.log("Hello, World! ☕");
-for (let i = 0; i < 3; i++) {
-console.log("Coding with passion!");
-}`
+    python: `score = int(input("Enter your exam score: "))<br>
+    if score >= 30:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Mag swimming")<br>
+    else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Magpabangga sa truck")`,
+
+    cpp: `#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br> cout<< "Aray kooo" &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;}`,
+
+    javascript: `let msg = "eme ka bhie";<br>for (let i = 0; i < 3; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(msg);<br>}`
 };
 
 function switchLanguage(lang) {
     const display = document.getElementById('codeDisplay');
     const buttons = document.querySelectorAll('.lang-btn');
-    
     buttons.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
-    
     display.innerHTML = codeSnippets[lang] + '<span class="cursor"></span>';
 }
 
@@ -30,8 +22,7 @@ function showGamePopup(title, description) {
     popupBody.innerHTML = `
         <h3>🎮 ${title}</h3>
         <p>${description}</p>
-        <p style="color: #ff6666; margin-top: 20px;">Ready to dominate the battlefield!</p>
-    `;
+        <p style="color: #ff6666; margin-top: 20px;">Ready to dominate the battlefield!</p>`;
     document.getElementById('popupOverlay').style.display = 'flex';
 }
 
@@ -45,8 +36,7 @@ function showCoderPopup() {
             <div class="progress-fill"></div>
         </div>
         <p style="color: #00ff00; font-weight: 600; font-size: 1.3em;">✓ Error fixed successfully!</p>
-        <p style="margin-top: 20px;">Coffee level: <span style="color: #ff6666;">Optimal</span></p>
-    `;
+        <p style="margin-top: 20px;">Coffee level: <span style="color: #ff6666;">Optimal</span></p>`;
     document.getElementById('popupOverlay').style.display = 'flex';
 }
 
@@ -61,12 +51,9 @@ function showMoviePopup(title, description, year, rating, trailerUrl) {
     <p style="margin-top: 15px; line-height: 1.8;">${description}</p>
     <div class="trailer-container">
       <iframe width="100%" height="230" src="${trailerUrl}" frameborder="0" allowfullscreen></iframe>
-    </div>
-  `;
-
+    </div>`;
   document.getElementById('popupOverlay').style.display = 'flex';
 }
-
 
 // Music Popup with Audio Player
 function showMusicPopup(title, artist, audioSrc, imageSrc) {
@@ -81,14 +68,13 @@ function showMusicPopup(title, artist, audioSrc, imageSrc) {
                 
                 <div class="music-popup-player">
                     <p class="now-playing">🎧 Now Playing...</p>
-                    <audio controls autoplay">
+                    <audio controls autoplay>
                         <source src="${audioSrc}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 </div>
             </div>
-        </div>
-    `;
+        </div>`;
     document.getElementById('popupOverlay').style.display = 'flex';
 }
 
@@ -147,7 +133,7 @@ document.getElementById('popupOverlay').addEventListener('click', function(e) {
 function showComfortPopup(title, description) {
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-        <h3>✨ ${title}</h3>
+        <h3>${title}</h3>
         <p style="margin-top: 20px; line-height: 1.6;">${description}</p>
         <p style="color: #ff6666; margin-top: 20px; font-style: italic;">"Part of my comfort zone!"</p>
     `;
@@ -164,7 +150,6 @@ chillItems.forEach(item => {
         showComfortPopup(title, description);
     });
 });
-
 
 // Back to Top Button
 window.addEventListener('scroll', function() {
