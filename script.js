@@ -5,7 +5,7 @@ const codeSnippets = {
 
     cpp: `#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br> cout<< "Aray kooo" &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;}`,
 
-    javascript: `let msg = "eme ka bhie";<br>for (let i = 0; i < 3; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(msg);<br>}`
+    javascript: `let msg = "keme lang bhie";<br>for (let i = 0; i < 3; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(msg);<br>}`
 };
 
 function switchLanguage(lang) {
@@ -39,6 +39,31 @@ function showCoderPopup() {
         <p style="margin-top: 20px;">Coffee level: <span style="color: #ff6666;">Optimal</span></p>`;
     document.getElementById('popupOverlay').style.display = 'flex';
 }
+
+// Skill Bar Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const skillBars = document.querySelectorAll('.skill-bar');
+    
+    const animateSkills = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const level = bar.getAttribute('data-level');
+                bar.style.setProperty('--skill-level', level + '%');
+                bar.classList.add('animate');
+                observer.unobserve(bar);
+            }
+        });
+    };
+    
+    const skillObserver = new IntersectionObserver(animateSkills, {
+        threshold: 0.5
+    });
+    
+    skillBars.forEach(bar => {
+        skillObserver.observe(bar);
+    });
+});
 
 function showMoviePopup(title, description, year, rating, trailerUrl) {
   const stars = '⭐'.repeat(rating);
@@ -82,7 +107,7 @@ function showMusicPopup(title, artist, audioSrc, imageSrc) {
 function showContactPopup() {
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-        <h3>💬 Let's Connect!</h3>
+        <h3>Let's Connect!</h3>
         <p style="margin-bottom: 30px;">Find me on these platforms:</p>
         <div class="social-links">
             <a href="https://www.facebook.com/keirzhr?mibextid=ZbWKwL" target="_blank" class="social-icon" title="Facebook">
