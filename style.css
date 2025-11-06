@@ -753,13 +753,14 @@ audio {
 }
 
 .footer h3 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     color: #ff6666;
 }
 
 .footer p {
     color: #aaa;
+    font-size: 0.95em;
     margin-bottom: 10px;
 }
 @media (max-width: 768px) {
