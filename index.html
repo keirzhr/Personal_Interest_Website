@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keil's Multiverse of Passions</title>
+    <title>Keil's Digital Realm</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="topbar">
-    <div class="topbar-content">
-        <h3>THE HERO'S ARCHIVE</h3>
-        <p>Where Creativity Meets Code</p>
-    </div></header>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="Hero's Archive Logo" class="nav-logo">
+                <span class="nav-title">MY DIGITAL REALM</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#coder-zone" class="nav-link">Coder's Zone</a>
+                <a href="#gamer-universe" class="nav-link">Gamer Universe</a>
+                <a href="#movie-realm" class="nav-link">Movie Realm</a>
+                <a href="#music-dimension" class="nav-link">Music Dimension</a>
+                <a href="#comfort-realm" class="nav-link">Comfort Realm</a>
+            </nav>
+        </div>
+    </header>
     <div class="header">
         <div class="profile-photo">
             <img src="images/me.png" alt="Keil Rizher Valida">
@@ -32,7 +47,8 @@
         </div>
     </div>
 
-        <!-- Section 1: The Coder's Zone -->
+    <!-- Section 1: The Coder's Zone -->
+    <div id="coder-zone">
         <div class="section coder-zone">
             <div class="coder-header">
                 <h2> 💻 The Coder's Zone</h2>
@@ -60,495 +76,503 @@
                 <button class="btn" onclick="showCoderPopup()">☕ Debug Mode</button>
             </div>
             <div class="skills-container">
-                <h2>Languages and Tools I Use</h2>
-                <p class="section-caption">(I'm still learning)</p>
-                <div class="skill-item">
+                    <h2>Coding & Database Proficiency</h2>
+                    <p class="section-caption">(I'm still learning)</p>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="70" style="--skill-color: #FFD43B;">
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-icon">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="50" style="--skill-color: #00599C;">
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="80" style="--skill-color: #E34F26;">
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="80" style="--skill-color: #1572B6;">
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="45" style="--skill-color: #F7DF1E;">
+                                <span class="skill-percentage">45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="40" style="--skill-color: #E76F00;">
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="65" style="--skill-color: #00758F;">
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
                     <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
-                        <span class="skill-name">Python</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="skill-icon">
+                        <span class="skill-name">Arduino</span>
                     </div>
                     <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="70" style="--skill-color: #FFD43B;">
-                            <span class="skill-percentage">70%</span>
+                        <div class="skill-bar" data-level="20" style="--skill-color: #00979D;">
+                            <span class="skill-percentage">20%</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-icon">
-                        <span class="skill-name">C++</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="50" style="--skill-color: #00599C;">
-                            <span class="skill-percentage">50%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
-                        <span class="skill-name">HTML</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="80" style="--skill-color: #E34F26;">
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
-                        <span class="skill-name">CSS</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="80" style="--skill-color: #1572B6;">
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
-                        <span class="skill-name">JavaScript</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="45" style="--skill-color: #F7DF1E;">
-                            <span class="skill-percentage">45%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
-                        <span class="skill-name">Java</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="40" style="--skill-color: #E76F00;">
-                            <span class="skill-percentage">40%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
-                        <span class="skill-name">MySQL</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" data-level="65" style="--skill-color: #00758F;">
-                            <span class="skill-percentage">65%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                <div class="skill-header">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="skill-icon">
-                    <span class="skill-name">Arduino</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div class="skill-bar" data-level="20" style="--skill-color: #00979D;">
-                        <span class="skill-percentage">20%</span>
-                    </div>
-                </div>
-            </div>
-
             </div>
         </div>
+    </div>
 
     <!-- Section 2: The Gamer Universe -->
-    <div class="section">
-        <h2>🎮 The Gamer Universe</h2>
-        <div class="steam-caption">
-            <a href="https://steamcommunity.com/profiles/76561199654729145/" target="_blank" class="social-icon steam-icon" title="Visit my Steam profile">
-                <img src="images/steam.png" alt="Steam Logo">
-            </a>
-            <p class="section-caption">Join my universe — let's play and conquer together!</p>
-        </div>
-        <div class="grid">
-            <div class="card" onclick="showGamePopup('Mobile Legends', 'The ultimate MOBA experience where strategy meets action. Leading my team to victory in every match!')">
-                <figure>
-                    <img src="images/image1.jpg" alt="Mobile Legends">
-                    <figcaption>
-                        <h3>Mobile Legends</h3>
-                    </figcaption>
-                </figure>
+    <div id="gamer-universe">
+        <div class="section">
+            <h2>🎮 The Gamer Universe</h2>
+            <div class="steam-caption">
+                <a href="https://steamcommunity.com/profiles/76561199654729145/" target="_blank" class="social-icon steam-icon" title="Visit my Steam profile">
+                    <img src="images/steam.png" alt="Steam Logo">
+                </a>
+                <p class="section-caption">Join my universe — let's play and conquer together!</p>
             </div>
-            <div class="card" onclick="showGamePopup('Minecraft', 'Building worlds, one block at a time. From survival to creative mode, the possibilities are endless!')">
-                <figure>
-                    <img src="images/image2.jpg" alt="Minecraft">
-                    <figcaption>
-                        <h3>Minecraft</h3>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="card" onclick="showGamePopup('Clash of Clans', 'Strategic warfare at its finest. Building my empire and crushing opponents with my clan!')">
-                <figure>
-                    <img src="images/image3.png" alt="Clash of Clans">
-                    <figcaption>
-                        <h3>Clash of Clans</h3>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="card" onclick="showGamePopup('Asphalt 9', 'Speed, adrenaline, and nitro boosts. Racing through the streets at breakneck speeds!')">
-                <figure>
-                    <img src="images/image4.jpg" alt="Asphalt 9">
-                    <figcaption>
-                        <h3>Asphalt 9</h3>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="card" onclick="showGamePopup('Call of Duty: Mobile', 'Fast-paced mobile shooter where every move counts. Taking the fight anywhere, anytime!')">
-                <figure>
-                    <img src="images/image5.png" alt="Call of Duty: Mobile">
-                    <figcaption>
-                        <h3>Call of Duty: Mobile</h3>
-                    </figcaption>
-                </figure>
-            </div>
+            <div class="grid">
+                <div class="card" onclick="showGamePopup('Mobile Legends', 'The ultimate MOBA experience where strategy meets action. Leading my team to victory in every match!')">
+                    <figure>
+                        <img src="images/image1.jpg" alt="Mobile Legends">
+                        <figcaption>
+                            <h3>Mobile Legends</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card" onclick="showGamePopup('Minecraft', 'Building worlds, one block at a time. From survival to creative mode, the possibilities are endless!')">
+                    <figure>
+                        <img src="images/image2.jpg" alt="Minecraft">
+                        <figcaption>
+                            <h3>Minecraft</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card" onclick="showGamePopup('Clash of Clans', 'Strategic warfare at its finest. Building my empire and crushing opponents with my clan!')">
+                    <figure>
+                        <img src="images/image3.png" alt="Clash of Clans">
+                        <figcaption>
+                            <h3>Clash of Clans</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card" onclick="showGamePopup('Asphalt 9', 'Speed, adrenaline, and nitro boosts. Racing through the streets at breakneck speeds!')">
+                    <figure>
+                        <img src="images/image4.jpg" alt="Asphalt 9">
+                        <figcaption>
+                            <h3>Asphalt 9</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card" onclick="showGamePopup('Call of Duty: Mobile', 'Fast-paced mobile shooter where every move counts. Taking the fight anywhere, anytime!')">
+                    <figure>
+                        <img src="images/image5.png" alt="Call of Duty: Mobile">
+                        <figcaption>
+                            <h3>Call of Duty: Mobile</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showGamePopup('Left 4 Dead', 'Survival horror co-op at its best. Fighting hordes of zombies with my squad!')">
-                <figure>
-                    <img src="images/image6.png" alt="Left 4 Dead">
-                    <figcaption>
-                        <h3>Left 4 Dead</h3>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="card" onclick="showGamePopup('GTA San Andreas', 'Classic open-world adventure. Grove Street forever!')">
-                <figure>
-                    <img src="images/image7.jpg" alt="GTA San Andreas">
-                    <figcaption>
-                        <h3>GTA San Andreas</h3>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="card" onclick="showGamePopup('NBA 2K', 'Hit the court and dominate the game. Ball is life!')">
-                <figure>
-                    <img src="images/image8.jpg" alt="NBA 2K">
-                    <figcaption>
-                        <h3>NBA 2K</h3>
-                    </figcaption>
-                </figure>
+                <div class="card" onclick="showGamePopup('Left 4 Dead', 'Survival horror co-op at its best. Fighting hordes of zombies with my squad!')">
+                    <figure>
+                        <img src="images/image6.png" alt="Left 4 Dead">
+                        <figcaption>
+                            <h3>Left 4 Dead</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card" onclick="showGamePopup('GTA San Andreas', 'Classic open-world adventure. Grove Street forever!')">
+                    <figure>
+                        <img src="images/image7.jpg" alt="GTA San Andreas">
+                        <figcaption>
+                            <h3>GTA San Andreas</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card" onclick="showGamePopup('NBA 2K', 'Hit the court and dominate the game. Ball is life!')">
+                    <figure>
+                        <img src="images/image8.jpg" alt="NBA 2K">
+                        <figcaption>
+                            <h3>NBA 2K</h3>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Section 3: The Movie Realm -->
-    <div class="section">
-        <h2>🎬 The Movie Realm</h2>
-        <div class="letterboxd-caption">
-        <a href="https://letterboxd.com/keirzhr/" target="_blank" class="social-icon letterboxd-icon" title="Visit my Letterboxd profile">
-            <img src="images/letterboxd.png" alt="Letterboxd Logo">
-        </a>
-            <p class="section-caption">Follow me on Letterboxd – my movie diary!</p>
-        </div>
-        <div class="grid">
-            <div class="card" onclick="showMoviePopup(
-                'Avengers: Endgame',
-                'The epic conclusion to the Infinity Saga. Heroes unite for one final battle.',
-                '2019',
-                5,
-                'https://www.youtube.com/embed/TcMBFSGVi1c?si=xHSczZePUfhvoEIN'
-            )">
-                <figure>
-                    <img src="images/movie1.jpg" alt="Avengers: Endgame">
-                    <figcaption>
-                        <h3>Avengers: Endgame</h3>
-                    </figcaption>
-                </figure>
+    <div id="movie-realm">
+        <div class="section">
+            <h2>🎬 The Movie Realm</h2>
+            <div class="letterboxd-caption">
+            <a href="https://letterboxd.com/keirzhr/" target="_blank" class="social-icon letterboxd-icon" title="Visit my Letterboxd profile">
+                <img src="images/letterboxd.png" alt="Letterboxd Logo">
+            </a>
+                <p class="section-caption">Follow me on Letterboxd – my movie diary!</p>
             </div>
+            <div class="grid">
+                <div class="card" onclick="showMoviePopup(
+                    'Avengers: Endgame',
+                    'The epic conclusion to the Infinity Saga. Heroes unite for one final battle.',
+                    '2019',
+                    5,
+                    'https://www.youtube.com/embed/TcMBFSGVi1c?si=xHSczZePUfhvoEIN'
+                )">
+                    <figure>
+                        <img src="images/movie1.jpg" alt="Avengers: Endgame">
+                        <figcaption>
+                            <h3>Avengers: Endgame</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'Knives Out',
-                'When a renowned crime novelist is found dead, detective Benoit Blanc investigates a tangled web of lies and family secrets in this sharp modern whodunit.',
-                '2019',
-                5,
-                'https://www.youtube.com/embed/qGqiHJTsRkQ'
-            )">
-                <figure>
-                    <img src="images/movie2.jpg" alt="Knives Out">
-                    <figcaption>
-                        <h3>Knives Out</h3>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card" onclick="showMoviePopup(
+                    'Knives Out',
+                    'When a renowned crime novelist is found dead, detective Benoit Blanc investigates a tangled web of lies and family secrets in this sharp modern whodunit.',
+                    '2019',
+                    5,
+                    'https://www.youtube.com/embed/qGqiHJTsRkQ'
+                )">
+                    <figure>
+                        <img src="images/movie2.jpg" alt="Knives Out">
+                        <figcaption>
+                            <h3>Knives Out</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'La La Land',
-                'A love story between a musician and an actress chasing dreams in Los Angeles.',
-                '2016',
-                5,
-                'https://www.youtube.com/embed/0pdqf4P9MB8'
-            )">
-                <figure>
-                    <img src="images/movie3.jpg" alt="La La Land">
-                    <figcaption>
-                        <h3>La La Land</h3>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card" onclick="showMoviePopup(
+                    'La La Land',
+                    'A love story between a musician and an actress chasing dreams in Los Angeles.',
+                    '2016',
+                    5,
+                    'https://www.youtube.com/embed/0pdqf4P9MB8'
+                )">
+                    <figure>
+                        <img src="images/movie3.jpg" alt="La La Land">
+                        <figcaption>
+                            <h3>La La Land</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'Oppenheimer',
-                'The story of J. Robert Oppenheimer and the creation of the atomic bomb.',
-                '2023',
-                5,
-                'https://www.youtube.com/embed/uYPbbksJxIg?si=Tz1y-4ZBuGvl9A_v'
-            )">
-                <figure>
-                    <img src="images/movie4.jpg" alt="Oppenheimer">
-                    <figcaption>
-                        <h3>Oppenheimer</h3>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card" onclick="showMoviePopup(
+                    'Oppenheimer',
+                    'The story of J. Robert Oppenheimer and the creation of the atomic bomb.',
+                    '2023',
+                    5,
+                    'https://www.youtube.com/embed/uYPbbksJxIg?si=Tz1y-4ZBuGvl9A_v'
+                )">
+                    <figure>
+                        <img src="images/movie4.jpg" alt="Oppenheimer">
+                        <figcaption>
+                            <h3>Oppenheimer</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'Blade Runner 2049',
-                'A young blade runner discovers a long-buried secret that leads him to track down former blade runner Rick Deckard, missing for thirty years.',
-                '2017',
-                5,
-                'https://www.youtube.com/embed/gCcx85zbxz4?si=K0kDp8wv_6u3gCeM'
-            )">
-                <figure>
-                    <img src="images/movie5.jpg" alt="Blade Runner 2049">
-                    <figcaption>
-                        <h3>Blade Runner 2049</h3>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card" onclick="showMoviePopup(
+                    'Blade Runner 2049',
+                    'A young blade runner discovers a long-buried secret that leads him to track down former blade runner Rick Deckard, missing for thirty years.',
+                    '2017',
+                    5,
+                    'https://www.youtube.com/embed/gCcx85zbxz4?si=K0kDp8wv_6u3gCeM'
+                )">
+                    <figure>
+                        <img src="images/movie5.jpg" alt="Blade Runner 2049">
+                        <figcaption>
+                            <h3>Blade Runner 2049</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'The Wolf of Wall Street',
-                'A wild and intense ride through the rise and fall of a stockbroker.',
-                '2013',
-                5,
-                'https://www.youtube.com/embed/iszwuX1AK6A'
-            )">
-                <figure>
-                    <img src="images/movie6.jpg" alt="The Wolf of Wall Street">
-                    <figcaption>
-                        <h3>The Wolf of Wall Street</h3>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card" onclick="showMoviePopup(
+                    'The Wolf of Wall Street',
+                    'A wild and intense ride through the rise and fall of a stockbroker.',
+                    '2013',
+                    5,
+                    'https://www.youtube.com/embed/iszwuX1AK6A'
+                )">
+                    <figure>
+                        <img src="images/movie6.jpg" alt="The Wolf of Wall Street">
+                        <figcaption>
+                            <h3>The Wolf of Wall Street</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'The Greatest Showman',
-                'A musical inspired by the story of P.T. Barnum, celebrating imagination and dreams.',
-                '2017',
-                5,
-                'https://www.youtube.com/embed/EodWwczRIe4?si=sE5pWUocu7cKEF7v'
-            )">
-                <figure>
-                    <img src="images/movie7.jpg" alt="The Greatest Showman">
-                    <figcaption>
-                        <h3>The Greatest Showman</h3>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card" onclick="showMoviePopup(
+                    'The Greatest Showman',
+                    'A musical inspired by the story of P.T. Barnum, celebrating imagination and dreams.',
+                    '2017',
+                    5,
+                    'https://www.youtube.com/embed/EodWwczRIe4?si=sE5pWUocu7cKEF7v'
+                )">
+                    <figure>
+                        <img src="images/movie7.jpg" alt="The Greatest Showman">
+                        <figcaption>
+                            <h3>The Greatest Showman</h3>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card" onclick="showMoviePopup(
-                'Shutter Island',
-                'A U.S. Marshal investigates a psychiatric facility, uncovering haunting secrets.',
-                '2010',
-                5,
-                'https://www.youtube.com/embed/5iaYLCiq5RM'
-            )">
-                <figure>
-                    <img src="images/movie8.jpg" alt="Shutter Island">
-                    <figcaption>
-                        <h3>Shutter Island</h3>
-                    </figcaption>
-                </figure>
+                <div class="card" onclick="showMoviePopup(
+                    'Shutter Island',
+                    'A U.S. Marshal investigates a psychiatric facility, uncovering haunting secrets.',
+                    '2010',
+                    5,
+                    'https://www.youtube.com/embed/5iaYLCiq5RM'
+                )">
+                    <figure>
+                        <img src="images/movie8.jpg" alt="Shutter Island">
+                        <figcaption>
+                            <h3>Shutter Island</h3>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Section 4: The Music Dimension -->
-    <div class="section">
-        <h2>🎧 The Music Dimension</h2>
-        <div class="spotify-caption">
-            <a href="https://open.spotify.com/user/317geqtm4f5t5lrs32jc2hbd3upy?si=af6c25c14a34497a" target="_blank" class="social-icon spotify-icon" title="Listen with me on Spotify">
-                <img src="images/spotify.png" alt="Spotify Logo">
-            </a>
-            <p class="section-caption">Listen with me – explore my playlists by mood and genre!</p>
-        </div>
-        <div class="grid">
-            <div class="card music-card" onclick="showMusicPopup('About You', 'The 1975', 'music/song1.mp3', 'images/song1.jpg')">
-                <figure>
-                    <img src="images/song1.jpg" alt="About You - The 1975">
-                    <figcaption>
-                        <h3>About You</h3>
-                        <p>The 1975</p>
-                    </figcaption>
-                </figure>
+    <div id="music-dimension">
+        <div class="section">
+            <h2>🎧 The Music Dimension</h2>
+            <div class="spotify-caption">
+                <a href="https://open.spotify.com/user/317geqtm4f5t5lrs32jc2hbd3upy?si=af6c25c14a34497a" target="_blank" class="social-icon spotify-icon" title="Listen with me on Spotify">
+                    <img src="images/spotify.png" alt="Spotify Logo">
+                </a>
+                <p class="section-caption">Listen with me – explore my playlists by mood and genre!</p>
             </div>
+            <div class="grid">
+                <div class="card music-card" onclick="showMusicPopup('About You', 'The 1975', 'music/song1.mp3', 'images/song1.jpg')">
+                    <figure>
+                        <img src="images/song1.jpg" alt="About You - The 1975">
+                        <figcaption>
+                            <h3>About You</h3>
+                            <p>The 1975</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('Kaleidoscope World', 'FrancisM', 'music/song2.mp3', 'images/song2.png')">
-                <figure>
-                    <img src="images/song2.png" alt="Kaleidoscope - FrancisM">
-                    <figcaption>
-                        <h3>Kaleidoscope World</h3>
-                        <p>FrancisM</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card music-card" onclick="showMusicPopup('Kaleidoscope World', 'FrancisM', 'music/song2.mp3', 'images/song2.png')">
+                    <figure>
+                        <img src="images/song2.png" alt="Kaleidoscope - FrancisM">
+                        <figcaption>
+                            <h3>Kaleidoscope World</h3>
+                            <p>FrancisM</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('Passenger Seat', 'Stephen Speaks', 'music/song3.mp3', 'images/song3.png')">
-                <figure>
-                    <img src="images/song3.png" alt="Passenger  Seat - Stephen Speaks">
-                    <figcaption>
-                        <h3>Passenger Seat</h3>
-                        <p>Stephen Speaks</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card music-card" onclick="showMusicPopup('Passenger Seat', 'Stephen Speaks', 'music/song3.mp3', 'images/song3.png')">
+                    <figure>
+                        <img src="images/song3.png" alt="Passenger  Seat - Stephen Speaks">
+                        <figcaption>
+                            <h3>Passenger Seat</h3>
+                            <p>Stephen Speaks</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('Two Is Better Than One', 'Boys Like Girls (feat. Taylor Swift)', 'music/song4.mp3', 'images/song4.png')">
-                <figure>
-                    <img src="images/song4.png" alt="Two Is Better Than One - Boys Like Girls (feat. Taylor Swift)">
-                    <figcaption>
-                        <h3>Two Is Better Than One</h3>
-                        <p>Boys Like Girls (feat. Taylor Swift)</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card music-card" onclick="showMusicPopup('Two Is Better Than One', 'Boys Like Girls (feat. Taylor Swift)', 'music/song4.mp3', 'images/song4.png')">
+                    <figure>
+                        <img src="images/song4.png" alt="Two Is Better Than One - Boys Like Girls (feat. Taylor Swift)">
+                        <figcaption>
+                            <h3>Two Is Better Than One</h3>
+                            <p>Boys Like Girls (feat. Taylor Swift)</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('Finesse', 'Bruno Mars ft. Cardi B', 'music/song5.mp3', 'images/song5.png')">
-                <figure>
-                    <img src="images/song5.png" alt="Finesse - Bruno Mars ft. Cardi B">
-                    <figcaption>
-                        <h3>Finesse</h3>
-                        <p>Bruno Mars ft. Cardi B</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card music-card" onclick="showMusicPopup('Finesse', 'Bruno Mars ft. Cardi B', 'music/song5.mp3', 'images/song5.png')">
+                    <figure>
+                        <img src="images/song5.png" alt="Finesse - Bruno Mars ft. Cardi B">
+                        <figcaption>
+                            <h3>Finesse</h3>
+                            <p>Bruno Mars ft. Cardi B</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('Kiss That I Never Had', 'Kolohe Kai', 'music/song6.mp3', 'images/song6.png')">
-                <figure>
-                    <img src="images/song6.png" alt="Kiss That I Never Had - Kolohe Kai">
-                    <figcaption>
-                        <h3>Kiss That I Never Had</h3>
-                        <p>Kolohe Kai</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card music-card" onclick="showMusicPopup('Kiss That I Never Had', 'Kolohe Kai', 'music/song6.mp3', 'images/song6.png')">
+                    <figure>
+                        <img src="images/song6.png" alt="Kiss That I Never Had - Kolohe Kai">
+                        <figcaption>
+                            <h3>Kiss That I Never Had</h3>
+                            <p>Kolohe Kai</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('One Thing', 'One Direction', 'music/song7.mp3', 'images/song7.png')">
-                <figure>
-                    <img src="images/song7.png" alt="One Thing - One Direction">
-                    <figcaption>
-                        <h3>One thing</h3>
-                        <p>One Direction</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card music-card" onclick="showMusicPopup('One Thing', 'One Direction', 'music/song7.mp3', 'images/song7.png')">
+                    <figure>
+                        <img src="images/song7.png" alt="One Thing - One Direction">
+                        <figcaption>
+                            <h3>One thing</h3>
+                            <p>One Direction</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card music-card" onclick="showMusicPopup('You Decorated My Life', 'Kenny Rogers', 'music/song8.mp3', 'images/song8.png')">
-                <figure>
-                    <img src="images/song8.png" alt="You Decorated My Life - Kenny Rogers">
-                    <figcaption>
-                        <h3>You Decorated My Life</h3>
-                        <p>Kenny Rogers</p>
-                    </figcaption>
-                </figure>
+                <div class="card music-card" onclick="showMusicPopup('You Decorated My Life', 'Kenny Rogers', 'music/song8.mp3', 'images/song8.png')">
+                    <figure>
+                        <img src="images/song8.png" alt="You Decorated My Life - Kenny Rogers">
+                        <figcaption>
+                            <h3>You Decorated My Life</h3>
+                            <p>Kenny Rogers</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 
-  <!-- Section 5: the comfort dimension -->
-    <div class="section">
-        <h2>☕ The Comfort Dimension</h2>
-        <p class="section-caption">
-             Simple things that bring me comfort.
-        </p>
+    <!-- Section 5: the comfort realm -->
+    <div id="comfort-realm">
+        <div class="section">
+            <h2>☕ The Comfort Realm</h2>
+            <p class="section-caption">
+                Simple things that bring me comfort.
+            </p>
 
-        <div class="grid">
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/bball.png" alt="Basketball">
-                    <figcaption>
-                        <h3>Basketball</h3>
-                        <p>My favorite way to have fun and sweat.</p>
-                    </figcaption>
-                </figure>
-            </div>
+            <div class="grid">
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/bball.png" alt="Basketball">
+                        <figcaption>
+                            <h3>Basketball</h3>
+                            <p>My favorite way to have fun and sweat.</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/coffee.jpg" alt="Coffee">
-                    <figcaption>
-                        <h3>Coffee</h3>
-                        <p>My daily dose of energy and peace.</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/coffee.jpg" alt="Coffee">
+                        <figcaption>
+                            <h3>Coffee</h3>
+                            <p>My daily dose of energy and peace.</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/jollibee.jpg" alt="Spaghetti">
-                    <figcaption>
-                        <h3>Jollibee</h3>
-                        <p>Nothing beats my comfort fast food.</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/jollibee.jpg" alt="Spaghetti">
+                        <figcaption>
+                            <h3>Jollibee</h3>
+                            <p>Nothing beats my comfort fast food.</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/sinigang.jpg" alt="Sinigang">
-                    <figcaption>
-                        <h3>Sinigang</h3>
-                        <p>My forever favorite dish from home.</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/sinigang.jpg" alt="Sinigang">
+                        <figcaption>
+                            <h3>Sinigang</h3>
+                            <p>My forever favorite dish from home.</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/burger.jpg" alt="Burgers">
-                    <figcaption>
-                        <h3>Burgers</h3>
-                        <p>Simple, tasty, and always satisfying.</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/burger.jpg" alt="Burgers">
+                        <figcaption>
+                            <h3>Burgers</h3>
+                            <p>Simple, tasty, and always satisfying.</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/lomi.jpg" alt="Lomi">
-                    <figcaption>
-                        <h3>Batangas Lomi</h3>
-                        <p>Best meal when it’s cold outside</p>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/lomi.jpg" alt="Lomi">
+                        <figcaption>
+                            <h3>Batangas Lomi</h3>
+                            <p>Best meal when it’s cold outside</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/actionfigs.jpg" alt="Action Figures">
-                    <figcaption>
-                        <h3>Action Figures</h3>
-                        <p>Collecting heroes, one figure at a time</p>
-                    </figcaption>
-                </figure>
-            </div>
-            
-            <div class="card chill-item">
-                <figure>
-                    <img src="images/dog.jpg" alt="Our Dog" style="border-radius: 15px;">
-                    <figcaption>
-                        <h3>Our Dog</h3>
-                        <p>Always there to cheer me up.</p>
-                    </figcaption>
-                </figure>
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/actionfigs.jpg" alt="Action Figures">
+                        <figcaption>
+                            <h3>Action Figures</h3>
+                            <p>Collecting heroes, one figure at a time</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="card chill-item">
+                    <figure>
+                        <img src="images/dog.jpg" alt="Our Dog" style="border-radius: 15px;">
+                        <figcaption>
+                            <h3>Our Dog</h3>
+                            <p>My daily dose of happiness.</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
@@ -566,7 +590,7 @@
 
     <footer class="footer">
     <div class="footer-content">
-        <h3>⚡ THE HERO'S ARCHIVE</h3>
+        <h3>⚡ KEIL'S DIGITAL REALM</h3>
         <p>From coding and coffee to gaming and goals – thanks for visiting my multiverse.</p>
         <p class="footer-note">© 2025 Keil Rizher. All rights reserved.</p>
     </div>
